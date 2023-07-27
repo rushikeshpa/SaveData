@@ -1,0 +1,12 @@
+git init
+
+git add .
+
+git commit -m "Commit from git bash"
+
+git remote add github https://github.com/rushikeshpa/swagger.git
+
+git remote -v
+
+git push -f github master
+
