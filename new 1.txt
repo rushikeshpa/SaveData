@@ -1,0 +1,47 @@
+INSERT INTO employee (firstname,middlename,lastname,age,salary,location) VALUES('ashwin','kumar','sharma','23','6000','banglore');
+INSERT INTO employee (firstname,lastname,age,salary,location) VALUES('jai','Patil','32','7000','banglore
+
+INSERT INTO employee (firstname,middlename,lastname,age,salary,location) VALUES("Rajes'h",'kumar','sharma','24','10000','banglore'),('sam\s','kumar','pal','35','15000','banglore');
+
+CREATE TABLE employee (
+FIRSTNAME varchar (25) NOT NULL,
+MIDDLENAME varchar (25),
+LASTNAME varchar (25) NOT NULL,
+AGE int NOT NULL ,
+SALARY int NOT NULL,
+LOCATION varchar (20) NOT NULL  DEFAULT 'banglore'
+
+);
+
+INSERT INTO employee (firstname,lastname,age,salary) VALUES('ashwin','sharma','23','6000');
+INSERT INTO employee (firstname,lastname,age,salary,location) VALUES('jai','Patil','32','7000','pune');
+
+INSERT INTO employee (firstname,lastname,age,salary) VALUES('ash','patil','36','40000');
+
+
+CREATE TABLE employee (
+id int PRIMARY KEY AUTO_INCREMENT ,
+FIRSTNAME varchar (25) NOT NULL,
+MIDDLENAME varchar (25),
+LASTNAME varchar (25) NOT NULL,
+AGE int NOT NULL ,
+SALARY int NOT NULL,
+LOCATION varchar (20) NOT NULL  DEFAULT 'banglore'
+);
+
+Case sensitive 
+select * from employee where binary firstname='ash';
+
+update employee set lastname='pawar' where firstname='ash';
+
+where clause fot the filter condition
+select * from employee where age > 29;
+
+Alas
+salary firstname as name, lastname as surname from employee; 
+
+ update employee set location='mumbai' where firstname='ashwin';
+ 
+ Alter command====
+ 
+ 
