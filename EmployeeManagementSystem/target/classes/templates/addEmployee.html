@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<a href="add"> Add Employee</a>
+	<br>
+
+
+
+	<form action="#" th:action="@{/register}" method="post" th:object="${employee}">
+
+
+		<label>Employee Id:</label>
+		<input type="text" th:field="*{empId}" /><br />
+		<div th:if="${#fields.hasErrors('empId')}" th:errors="*{empId}"></div>
+		<label>Full name:</label>
+		<input type="text" th:field="*{name}" /><br />
+		<div th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
+
+		<label>Designation:</label>
+		<input type="text" th:field="*{designation}" /><br />
+		<div th:if="${#fields.hasErrors('designation')}" th:errors="*{designation}"></div>
+		<label>Salary:</label>
+		<input type="text" th:field="*{salary}" /><br />
+
+		<div th:if="${#fields.hasErrors('salary')}" th:errors="*{salary}"></div>
+
+		<button type="submit">Register</button>
+	</form>
+
+
+</body>
+
+</html>
